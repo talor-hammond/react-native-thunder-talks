@@ -1,13 +1,18 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import Calculator from './source/components/Calculator'
 
 export default class App extends React.Component {
+  add(numOne, numTwo) {
+    console.log('Pressed the button')
+  }
+
   render() {
     return (
       <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-        <Text>Changes you make will reload.</Text>
-        <Text>Shake your phone to open the menu.</Text>
+        <Text>A revolutionary calculator app</Text>
+        
+        <Calculator add={() => this.add()}/>
       </View>
     );
   }

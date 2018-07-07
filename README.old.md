@@ -34,6 +34,8 @@ React-native app for 15-minute thunder-talk; adds two numbers together and prese
 * Import... 
     * { Button }
         * props: title= 'Button title'; needs an onPress={} handler
+        * 
+    * {  }
 
 
 
