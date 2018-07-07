@@ -13,3 +13,20 @@ React-native app for 15-minute thunder-talk; adds two numbers together and prese
         * Different from something like Cordova / Ionic apps, which are just a mobile-'wrapper' for your web-app; you can even write with Swift / Java
         * We don't work with CSS at all; it's not supported
         * We won't work with traditional html element anymore -- different to React -- which we will see in our render methods
+
+    * Code:
+        * Android / iOS folders hold the config files and builds related to the specific apps
+        * index.js registers a component which is a function which returns our App.js
+        * *Plan*
+            * Get it working programmatically with components, then create a StyleSheet component
+
+### App.js
+* Our App.js is instantly recognisable, it's a normal React component
+    * Render method returns JSX, no html / css is used
+    * React native doesn't work with the normal dom
+* *Components:*
+    * View; essentially our div replacement
+    * Text; our paragraph or span replacement
+
+
+
