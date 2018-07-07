@@ -21,8 +21,11 @@ export default class App extends Component {
   }
 
   addNumbers(one, two) {
+    const numberOne = Number(one)
+    const numberTwo = Number(two)
+
     this.setState({
-      results: one + two
+      results: numberOne + numberTwo
     })
   }
 
