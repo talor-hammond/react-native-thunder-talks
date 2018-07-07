@@ -32,10 +32,12 @@ React-native app for 15-minute thunder-talk; adds two numbers together and prese
 
 
 ### From skeleton to solution:
+1. Talk through the boilerplate, break down the components; pre-pulled which we plan to use to build our app; gloss over the StyleSheet which was preset
 1. Start with a title, <Text>Our amazing calculator application</Text>
-2. Create a Calculator.js component, and add a button to it which calls a method through the App's (receives through props)
-    * Get the button to log something; show dev tools
-3. Create two text inputs in App.js, feed it through in state
+2. Next, render a <Button> and onPress get it to log something
+    * Write the addNumbers(one, two) method, console.log('mulch');
+        * 'Where's the console?' Bring up / introduce simulator dev tools
+3. Create two text inputs in App.js, setState just like we would with React, pass those as arguments to our addNumbers function
 
 * Import... 
     * { Button }
