@@ -1,2 +1,2 @@
 # react-native-thunder-talks
-Simple React-Native app; skeleton / boilerplate, and full solution
+React-native app for 15-minute thunder-talk; adds two numbers together and presents the results modally
