@@ -3,7 +3,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import Calculator from './source/components/Calculator'
 
 export default class App extends React.Component {
-  add(numOne, numTwo) {
+  addNumbers(one, two) {
     console.log('Pressed the button')
   }
 
@@ -11,8 +11,8 @@ export default class App extends React.Component {
     return (
       <View style={styles.container}>
         <Text>A revolutionary calculator app</Text>
-        
-        <Calculator add={() => this.add()}/>
+
+        <Calculator addNumbers={() => this.addNumbers()}/>
       </View>
     );
   }

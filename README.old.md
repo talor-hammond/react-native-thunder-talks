@@ -9,6 +9,9 @@ React-native app for 15-minute thunder-talk; adds two numbers together and prese
         * Allows you to use React & JavaScript during the build-process; your code is compiled into respective native Swift / Java code
         * The entire UI is compiled to native-code
             * All the UI elements, the buttons and so on, will be the native equivalents
+        * Maybe mention [airBnb] <https://www.youtube.com/watch?v=8qCociUB6aQ>
+            *   
+
     * *Second-slide*
         * Different from something like Cordova / Ionic apps, which are just a mobile-'wrapper' for your web-app; you can even write with Swift / Java
         * We don't work with CSS at all; it's not supported
@@ -17,8 +20,6 @@ React-native app for 15-minute thunder-talk; adds two numbers together and prese
     * Code:
         * Android / iOS folders hold the config files and builds related to the specific apps
         * index.js registers a component which is a function which returns our App.js
-        * *Plan*
-            * Create StyleSheet component beforehand, then get it working programmatically
 
 ### App.js
 * Our App.js is instantly recognisable, it's a normal React component
@@ -31,6 +32,11 @@ React-native app for 15-minute thunder-talk; adds two numbers together and prese
 
 
 ### From skeleton to solution:
+1. Start with a title, <Text>Our amazing calculator application</Text>
+2. Create a Calculator.js component, and add a button to it which calls a method through the App's (receives through props)
+    * Get the button to log something; show dev tools
+3. Create two text inputs in App.js, feed it through in state
+
 * Import... 
     * { Button }
         * props: title= 'Button title'; needs an onPress={} handler
