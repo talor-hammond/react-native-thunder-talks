@@ -30,6 +30,7 @@ export default class App extends Component {
   }
 
   render() {
+    // Pulling what we need from state:
     const {numberOne, numberTwo, results} = this.state
 
     return (

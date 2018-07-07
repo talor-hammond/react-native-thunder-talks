@@ -40,7 +40,7 @@ React-native app for 15-minute thunder-talk; adds two numbers together and prese
 3. Add this.state with numberOne, numberTwo, and results
 3. Create two text inputs in App.js, setState just like we would with React, pass those as arguments to our addNumbers function
     * 1 and 2 as a string and make it log 12 as a joke
-        * Bring up the point where this is where React Native's work under-the-hood is coming into play -- JavaScript would usually infer these two variables to be added as numbers right? Well React Native is compiling this as Swift, which is 'heavily-typed' -- you have to be explicit; cast the string as a number (or int) with Number(string)
+        * Go back and cast the strings one, two as numbers w Number()
 
 
 
