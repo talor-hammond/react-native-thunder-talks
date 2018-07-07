@@ -18,7 +18,7 @@ React-native app for 15-minute thunder-talk; adds two numbers together and prese
         * Android / iOS folders hold the config files and builds related to the specific apps
         * index.js registers a component which is a function which returns our App.js
         * *Plan*
-            * Get it working programmatically with components, then create a StyleSheet component
+            * Create StyleSheet component beforehand, then get it working programmatically
 
 ### App.js
 * Our App.js is instantly recognisable, it's a normal React component
@@ -27,6 +27,7 @@ React-native app for 15-minute thunder-talk; adds two numbers together and prese
 * *Components:*
     * View; essentially our div replacement
     * Text; our paragraph or span replacement
+    * StyleSheet; allows you to create 'classes', like this property
 
 
 
