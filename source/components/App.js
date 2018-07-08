@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 // React-native JS API / Component imports:
-import { 
+import {
   View, // Core layout-component, basic styling, grouping 'elements'; think '<div>'
   Text, // For displaying text; think '<p>'
   Button, // Think '<button>'; pass it a 'title' and an onPress
@@ -16,7 +16,8 @@ export default class App extends Component {
     this.state = {
       numberOne: '',
       numberTwo: '',
-      results: ''
+      result: '',
+      submitted: false
     }
   }
 
@@ -25,24 +26,26 @@ export default class App extends Component {
     const numberTwo = Number(two)
 
     this.setState({
-      results: numberOne + numberTwo
+      results: numberOne + numberTwo,
+      submitted: true
     })
   }
 
   render() {
     // Pulling what we need from state:
-    const {numberOne, numberTwo, results} = this.state
+    const { numberOne, numberTwo, results, submitted } = this.state
 
     return (
       <View style={styles.container}>
         <Text>A revolutionary calculator app</Text>
 
-        <TextInput placeholder='Number one!' onChangeText={(text) => this.setState({numberOne: text})}/>
-        <TextInput placeholder='Number two!' onChangeText={(text) => this.setState({numberTwo: text})}/>
+        <TextInput placeholder='Number one!' onChangeText={(text) => this.setState({ numberOne: text })} />
+        <TextInput placeholder='Number two!' onChangeText={(text) => this.setState({ numberTwo: text })} />
 
         <Button title='Calculate!' onPress={() => this.addNumbers(numberOne, numberTwo)} />
 
-        <Text>Results: {results}</Text>
+        {submitted && <Text>Results: {results}</Text>}
+
       </View>
     );
   }

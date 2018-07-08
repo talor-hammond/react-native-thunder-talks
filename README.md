@@ -29,6 +29,7 @@ React-native app for 15-minute thunder-talk; adds two numbers together and prese
     * View; essentially our div replacement
     * Text; our paragraph or span replacement
     * StyleSheet; allows you to create 'classes', like this property
+        * Every core component in 'react-native' accepts a 'style' property -- you can pass it one 'class' of styles, or an array of styles just like you could with html & css
 
 
 ### From skeleton to solution:
@@ -41,7 +42,7 @@ React-native app for 15-minute thunder-talk; adds two numbers together and prese
 3. Create two text inputs in App.js, setState just like we would with React, pass those as arguments to our addNumbers function
     * 1 and 2 as a string and make it log 12 as a joke
         * Go back and cast the strings one, two as numbers w Number()
-
+4. Do a ternary w 'submitted' to show results on submitted true we can use what we know from React
 
 
 
