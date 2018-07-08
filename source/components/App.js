@@ -36,17 +36,25 @@ export default class App extends Component {
     const { numberOne, numberTwo, results, submitted } = this.state
 
     return (
-      <View style={styles.container}>
-        <Text>A revolutionary calculator app</Text>
+      <React.Fragment>
+        <View style={styles.container}>
 
-        <TextInput placeholder='Number one!' onChangeText={(text) => this.setState({ numberOne: text })} />
-        <TextInput placeholder='Number two!' onChangeText={(text) => this.setState({ numberTwo: text })} />
+          <View style={styles.header}>
+            <Text style={styles.title}>A Calculator</Text>
+            <Text style={styles.subtitle}>A revolutionary calculator app</Text>
+          </View>
 
-        <Button title='Calculate!' onPress={() => this.addNumbers(numberOne, numberTwo)} />
+          <View style={styles.calculator}>
+            <TextInput placeholder='Number one!' onChangeText={(text) => this.setState({ numberOne: text })} />
+            <TextInput placeholder='Number two!' onChangeText={(text) => this.setState({ numberTwo: text })} />
 
-        {submitted && <Text>Results: {results}</Text>}
+            <Button title='Calculate!' onPress={() => this.addNumbers(numberOne, numberTwo)} />
 
-      </View>
+            {submitted && <Text>Results: {results}</Text>}
+          </View>
+
+        </View>
+      </React.Fragment>
     );
   }
 }
@@ -54,8 +62,21 @@ export default class App extends Component {
 const styles = StyleSheet.create({
   container: { // Think of this as a 'class'
     flex: 1,
-    backgroundColor: 'aqua',
+    backgroundColor: 'aqua', // These are our style properties...
     alignItems: 'center',
-    justifyContent: 'center',
   },
+  header: {
+    flex: 2,
+    justifyContent: 'center'
+  },
+  title: {
+    fontWeight: 'bold',
+    fontSize: 30
+  },
+  subtitle: {
+    fontSize: 20
+  },
+  calculator: {
+    flex: 3
+  }
 });
