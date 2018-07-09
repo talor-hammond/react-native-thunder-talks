@@ -35,31 +35,29 @@ export default class App extends Component {
   render() {
     // Pulling from state...
     const { numberOne, numberTwo, results, submitted } = this.state
-    // Pulling from styles... can you do this? TODO
-    const { inputs, container, header } = styles
 
     return (
       <React.Fragment>
 
         <Modal animationType="slide" visible={submitted}>
-            <View style={inputs}>
-              <Text>{ numberOne } + { numberTwo } is { results }, wow</Text>
-            </View>
+          <View style={styles.modal}>
+              <Text style={styles.modalText}>{ numberOne } + { numberTwo } is { results }, wow</Text>
+          </View>
         </Modal>
 
-        <View style={container}>
+        <View style={styles.container}>
 
-          <View style={header}>
-            <Text style={title}>Calculator</Text>
-            <Text style={subtitle}>A revolutionary calculator app</Text>
+          <View style={styles.header}>
+            <Text style={styles.title}>Calculator</Text>
+            <Text style={styles.subtitle}>A revolutionary calculator app</Text>
           </View>
 
-          <View style={calculator}>
+          <View style={styles.calculator}>
             <Text>Number one: </Text>
-            <TextInput style={inputs} onChangeText={(text) => this.setState({ numberOne: text })} />
+            <TextInput style={styles.inputs} onChangeText={(text) => this.setState({ numberOne: text })} />
 
             <Text>Number two: </Text>
-            <TextInput style={inputs} onChangeText={(text) => this.setState({ numberTwo: text })} />
+            <TextInput style={styles.inputs} onChangeText={(text) => this.setState({ numberTwo: text })} />
 
             <Button title='Calculate!' onPress={() => this.addNumbers(numberOne, numberTwo)} />
 
@@ -104,6 +102,7 @@ const styles = StyleSheet.create({
     fontSize: 25
   },
   modal: {
+    flex: 1,
     alignItems: 'center',
     justifyContent: 'center'
   },
