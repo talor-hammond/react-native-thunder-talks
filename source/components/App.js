@@ -40,17 +40,20 @@ export default class App extends Component {
         <View style={styles.container}>
 
           <View style={styles.header}>
-            <Text style={styles.title}>A Calculator</Text>
+            <Text style={styles.title}>Calculator</Text>
             <Text style={styles.subtitle}>A revolutionary calculator app</Text>
           </View>
 
           <View style={styles.calculator}>
-            <TextInput placeholder='Number one!' onChangeText={(text) => this.setState({ numberOne: text })} />
-            <TextInput placeholder='Number two!' onChangeText={(text) => this.setState({ numberTwo: text })} />
+            <Text>Number one: </Text>
+            <TextInput style={styles.inputs} onChangeText={(text) => this.setState({ numberOne: text })} />
+            
+            <Text>Number two: </Text>
+            <TextInput style={styles.inputs} onChangeText={(text) => this.setState({ numberTwo: text })} />
 
             <Button title='Calculate!' onPress={() => this.addNumbers(numberOne, numberTwo)} />
 
-            {submitted && <Text>Results: {results}</Text>}
+            {submitted && <Text style={styles.results}>Results: {results}</Text>}
           </View>
 
         </View>
@@ -60,13 +63,15 @@ export default class App extends Component {
 }
 
 const styles = StyleSheet.create({
+
   container: { // Think of this as a 'class'
     flex: 1,
-    backgroundColor: 'aqua', // These are our style properties...
+    backgroundColor: '#f3f3f3', // These are our style properties...
     alignItems: 'center',
   },
   header: {
     flex: 2,
+    alignItems: 'center',
     justifyContent: 'center'
   },
   title: {
@@ -78,5 +83,15 @@ const styles = StyleSheet.create({
   },
   calculator: {
     flex: 3
+  },
+  inputs: {
+    backgroundColor: 'white',
+    borderRadius: 7,
+    borderWidth: 1,
+    borderColor: 'black'
+  },
+  results: {
+    fontSize: 25
   }
+
 });
