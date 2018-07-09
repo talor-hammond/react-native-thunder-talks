@@ -6,7 +6,8 @@ import {
   Text, // For displaying text; think '<p>'
   Button, // Think '<button>'; pass it a 'title' and an onPress
   TextInput, // Think '<input type="text">'; pass it an onChangeText
-  StyleSheet // Create style-rules that our app will be able to interpret
+  StyleSheet, // Create style-rules that our app will be able to interpret
+  Modal // 'Pops' up on screen, 'animationType', 'transparent', 'visible'
 } from 'react-native';
 
 export default class App extends Component {
@@ -32,28 +33,37 @@ export default class App extends Component {
   }
 
   render() {
-    // Pulling what we need from state:
+    // Pulling from state...
     const { numberOne, numberTwo, results, submitted } = this.state
+    // Pulling from styles... can you do this? TODO
+    const { inputs, container, header } = styles
 
     return (
       <React.Fragment>
-        <View style={styles.container}>
 
-          <View style={styles.header}>
-            <Text style={styles.title}>Calculator</Text>
-            <Text style={styles.subtitle}>A revolutionary calculator app</Text>
+        <Modal animationType="slide" visible={submitted}>
+            <View style={inputs}>
+              <Text>{ numberOne } + { numberTwo } is { results }, wow</Text>
+            </View>
+        </Modal>
+
+        <View style={container}>
+
+          <View style={header}>
+            <Text style={title}>Calculator</Text>
+            <Text style={subtitle}>A revolutionary calculator app</Text>
           </View>
 
-          <View style={styles.calculator}>
+          <View style={calculator}>
             <Text>Number one: </Text>
-            <TextInput style={styles.inputs} onChangeText={(text) => this.setState({ numberOne: text })} />
-            
+            <TextInput style={inputs} onChangeText={(text) => this.setState({ numberOne: text })} />
+
             <Text>Number two: </Text>
-            <TextInput style={styles.inputs} onChangeText={(text) => this.setState({ numberTwo: text })} />
+            <TextInput style={inputs} onChangeText={(text) => this.setState({ numberTwo: text })} />
 
             <Button title='Calculate!' onPress={() => this.addNumbers(numberOne, numberTwo)} />
 
-            {submitted && <Text style={styles.results}>Results: {results}</Text>}
+            {/* {submitted && <Text style={results}>Results: {results}</Text>} */}
           </View>
 
         </View>
@@ -64,9 +74,9 @@ export default class App extends Component {
 
 const styles = StyleSheet.create({
 
-  container: { // Think of this as a 'class'
-    flex: 1,
-    backgroundColor: '#f3f3f3', // These are our style properties...
+  container: { // Think of this as a 'class'; className="container"
+    flex: 1, // These are our style properties; all have equivalent values
+    backgroundColor: '#f3f3f3',
     alignItems: 'center',
   },
   header: {
@@ -92,6 +102,14 @@ const styles = StyleSheet.create({
   },
   results: {
     fontSize: 25
+  },
+  modal: {
+    alignItems: 'center',
+    justifyContent: 'center'
+  },
+  modalText: {
+    fontSize: 35,
+    fontWeight: 'bold' 
   }
 
 });
