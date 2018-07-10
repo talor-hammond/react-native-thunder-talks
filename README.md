@@ -1,5 +1,10 @@
 # react-native-thunder-talks
 React-native app for 15-minute thunder-talk; adds two numbers together and presents the results modally
+# Goal:
+   * Be able to talk through -- in-depth -- the making of a simple react-native app using what we know from react & js
+      * Must be able to do so from start to finish in ~9-10 minutes
+      * Simple, clear, straightfoward
+         * Explain the whys
 
 ## Notes:
 * What is react native?
