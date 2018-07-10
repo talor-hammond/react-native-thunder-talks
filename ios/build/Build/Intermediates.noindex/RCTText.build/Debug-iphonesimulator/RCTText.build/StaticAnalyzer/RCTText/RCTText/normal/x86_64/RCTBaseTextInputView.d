@@ -1,0 +1,35 @@
+dependencies: \
+  /Users/tay/Desktop/Projects/Personal/react-native-thunder-talks/node_modules/react-native/Libraries/Text/TextInput/RCTBaseTextInputView.m \
+  /Users/tay/Desktop/Projects/Personal/react-native-thunder-talks/node_modules/react-native/Libraries/Text/TextInput/RCTBaseTextInputView.h \
+  /Users/tay/Desktop/Projects/Personal/react-native-thunder-talks/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTView.h \
+  /Users/tay/Desktop/Projects/Personal/react-native-thunder-talks/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBorderStyle.h \
+  /Users/tay/Desktop/Projects/Personal/react-native-thunder-talks/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTComponent.h \
+  /Users/tay/Desktop/Projects/Personal/react-native-thunder-talks/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTPointerEvents.h \
+  /Users/tay/Desktop/Projects/Personal/react-native-thunder-talks/node_modules/react-native/Libraries/Text/TextInput/RCTBackedTextInputDelegate.h \
+  /Users/tay/Desktop/Projects/Personal/react-native-thunder-talks/node_modules/react-native/Libraries/Text/TextInput/RCTBackedTextInputViewProtocol.h \
+  /Users/tay/Desktop/Projects/Personal/react-native-thunder-talks/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTAccessibilityManager.h \
+  /Users/tay/Desktop/Projects/Personal/react-native-thunder-talks/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridge.h \
+  /Users/tay/Desktop/Projects/Personal/react-native-thunder-talks/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeDelegate.h \
+  /Users/tay/Desktop/Projects/Personal/react-native-thunder-talks/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTJavaScriptLoader.h \
+  /Users/tay/Desktop/Projects/Personal/react-native-thunder-talks/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTDefines.h \
+  /Users/tay/Desktop/Projects/Personal/react-native-thunder-talks/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeModule.h \
+  /Users/tay/Desktop/Projects/Personal/react-native-thunder-talks/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTFrameUpdate.h \
+  /Users/tay/Desktop/Projects/Personal/react-native-thunder-talks/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTInvalidating.h \
+  /Users/tay/Desktop/Projects/Personal/react-native-thunder-talks/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTConvert.h \
+  /Users/tay/Desktop/Projects/Personal/react-native-thunder-talks/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTAnimationType.h \
+  /Users/tay/Desktop/Projects/Personal/react-native-thunder-talks/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTLog.h \
+  /Users/tay/Desktop/Projects/Personal/react-native-thunder-talks/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTAssert.h \
+  /Users/tay/Desktop/Projects/Personal/react-native-thunder-talks/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTUtils.h \
+  /Users/tay/Desktop/Projects/Personal/react-native-thunder-talks/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTTextDecorationLineType.h \
+  /Users/tay/Desktop/Projects/Personal/react-native-thunder-talks/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/Yoga.h \
+  /Users/tay/Desktop/Projects/Personal/react-native-thunder-talks/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGEnums.h \
+  /Users/tay/Desktop/Projects/Personal/react-native-thunder-talks/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGMacros.h \
+  /Users/tay/Desktop/Projects/Personal/react-native-thunder-talks/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTEventDispatcher.h \
+  /Users/tay/Desktop/Projects/Personal/react-native-thunder-talks/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTUIManager.h \
+  /Users/tay/Desktop/Projects/Personal/react-native-thunder-talks/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTRootView.h \
+  /Users/tay/Desktop/Projects/Personal/react-native-thunder-talks/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTViewManager.h \
+  /Users/tay/Desktop/Projects/Personal/react-native-thunder-talks/ios/build/Build/Products/Debug-iphonesimulator/include/React/UIView+React.h \
+  /Users/tay/Desktop/Projects/Personal/react-native-thunder-talks/node_modules/react-native/Libraries/Text/TextInput/RCTInputAccessoryView.h \
+  /Users/tay/Desktop/Projects/Personal/react-native-thunder-talks/node_modules/react-native/Libraries/Text/TextInput/RCTInputAccessoryViewContent.h \
+  /Users/tay/Desktop/Projects/Personal/react-native-thunder-talks/node_modules/react-native/Libraries/Text/RCTTextAttributes.h \
+  /Users/tay/Desktop/Projects/Personal/react-native-thunder-talks/node_modules/react-native/Libraries/Text/TextInput/RCTTextSelection.h
