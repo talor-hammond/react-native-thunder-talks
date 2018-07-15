@@ -1,67 +1,34 @@
 import React, { Component } from 'react';
 
-// React-native JS API / Component imports:
+// React-native component imports:
 import {
   View, // Core layout-component, basic styling, grouping 'elements'; think '<div>'
   Text, // For displaying text; think '<p>'
   Button, // Think '<button>'; pass it a 'title' and an onPress
-  TextInput, // Think '<input type="text">'; pass it an onChangeText
+  TextInput, // Think '<input type="text">'; pass it an onChangeText (returns text-value; string)
   StyleSheet, // Create style-rules that our app will be able to interpret
-  Modal // 'Pops' up on screen, 'animationType', 'transparent', 'visible'
+  Modal // 'Pops' up on screen, 'animationType', 'visible'
 } from 'react-native';
 
 export default class App extends Component {
   constructor(props) {
     super(props)
-
-    this.state = {
-      numberOne: '',
-      numberTwo: '',
-      result: '',
-      submitted: false
-    }
-  }
-
-  addNumbers(one, two) {
-    const numberOne = Number(one)
-    const numberTwo = Number(two)
-
-    this.setState({
-      results: numberOne + numberTwo,
-      submitted: true
-    })
   }
 
   render() {
-    // Pulling from state...
-    const { numberOne, numberTwo, results, submitted } = this.state
+    const { results, numberOne, numberTwo, submitted } = this.state
 
     return (
       <React.Fragment>
-
-        <Modal animationType="slide" visible={submitted}>
-          <View style={styles.modal}>
-              <Text style={styles.modalText}>{ numberOne } + { numberTwo } is { results }, wow</Text>
-          </View>
-        </Modal>
-
         <View style={styles.container}>
 
           <View style={styles.header}>
-            <Text style={styles.title}>Calculator</Text>
+            <Text style={styles.title}>Mulch</Text>
             <Text style={styles.subtitle}>A revolutionary calculator app</Text>
           </View>
 
           <View style={styles.calculator}>
-            <Text>Number one: </Text>
-            <TextInput style={styles.inputs} onChangeText={(text) => this.setState({ numberOne: text })} />
 
-            <Text>Number two: </Text>
-            <TextInput style={styles.inputs} onChangeText={(text) => this.setState({ numberTwo: text })} />
-
-            <Button title='Calculate!' onPress={() => this.addNumbers(numberOne, numberTwo)} />
-
-            {/* {submitted && <Text style={results}>Results: {results}</Text>} */}
           </View>
 
         </View>
@@ -94,9 +61,7 @@ const styles = StyleSheet.create({
   },
   inputs: {
     backgroundColor: 'white',
-    borderRadius: 7,
-    borderWidth: 1,
-    borderColor: 'black'
+    marginBottom: 5
   },
   results: {
     fontSize: 25
@@ -108,7 +73,7 @@ const styles = StyleSheet.create({
   },
   modalText: {
     fontSize: 35,
-    fontWeight: 'bold' 
+    fontWeight: 'bold'
   }
 
 });
