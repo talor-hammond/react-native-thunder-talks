@@ -16,8 +16,6 @@ export default class App extends Component {
   }
 
   render() {
-    const { results, numberOne, numberTwo, submitted } = this.state
-
     return (
       <React.Fragment>
         <View style={styles.container}>
