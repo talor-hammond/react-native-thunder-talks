@@ -40,7 +40,7 @@ React-native app for 15-minute thunder-talk; adds two numbers together and prese
         * 'Where's the console?' Bring up / introduce simulator dev tools
 3. Add this.state with numberOne, numberTwo, and results
 3. Create two text inputs in App.js, setState just like we would with React, pass those as arguments to our addNumbers function
-    * 1 and 2 as a string and make it log 12 as a joke
+    * 1 and 2 as a string and make it log 12 as a joke xdd
         * Go back and cast the strings one, two as numbers w Number()
 4. Do a ternary w 'submitted' to show results on submitted true we can use what we know from React
 

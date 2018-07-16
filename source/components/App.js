@@ -5,10 +5,10 @@ import {
   View, // Core layout-component, basic styling, grouping 'elements'; think '<div>'
   Text, // For displaying text; think '<p>'
   Button, // Think '<button>'; pass it a 'title' and an onPress
-  TextInput, // Think '<input type="text">'; pass it an onChangeText (returns text-value; string)
+  TextInput, // Think '<input type="text">'; onChangeText & keyboardType
   StyleSheet, // Create style-rules that our app will be able to interpret
   Modal // 'Pops' up on screen, 'animationType', 'visible'
-} from 'react-native';
+} from 'react-native'
 
 export default class App extends Component {
   constructor(props) {
