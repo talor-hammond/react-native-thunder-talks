@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 
 // React-native component imports:
 import {
@@ -31,7 +31,7 @@ export default class App extends Component {
 
         </View>
       </React.Fragment>
-    );
+    )
   }
 }
 
@@ -74,4 +74,4 @@ const styles = StyleSheet.create({
     fontWeight: 'bold'
   }
 
-});
+})
