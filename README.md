@@ -36,18 +36,18 @@ React-native app for 15-minute thunder-talk; adds two numbers together and prese
     * StyleSheet; allows you to create 'classes', like this property
         * Every core component in 'react-native' accepts a 'style' property -- you can pass it one 'class' of styles, or an array of styles just like you could with html & css
 
-
 ### From skeleton to solution:
-1. Talk through the boilerplate, break down the components; pre-pulled which we plan to use to build our app; gloss over the StyleSheet which was preset
-1. Start with a title, <Text>Our amazing calculator application
-2. Next, render a <Button> and onPress get it to log something
-    * Write the addNumbers(one, two) method, console.log('mulch');
-        * 'Where's the console?' Bring up / introduce simulator dev tools
-3. Add this.state with numberOne, numberTwo, and results
-3. Create two text inputs in App.js, setState just like we would with React, pass those as arguments to our addNumbers function
-    * 1 and 2 as a string and make it log 12 as a joke
-        * Go back and cast the strings one, two as numbers w Number()
-4. Do a ternary w 'submitted' to show results on submitted true we can use what we know from React
+1. Talk through setup w react-native getting started guide; simulator
+2. App.js looks familiar; except we are pulling in the react-native components we need in order to build a mobile user-interface
+3. Introduce some of the components; View, Text
+4. Render method
+5. StyleSheet component
+6. Add a button, get it to log something
+7. Build constructor; this.state w the stuff we need
+8. TextInput(s) -- talk about differences in interfacing with web vs. mobile; keyboardType
+9. onChangeText setState w refactoring; rewrite addNumbers
+10. Ternary to show results on submitted
+11. Modal to present the results on submit -- complete code is available on master 
 
 
 
