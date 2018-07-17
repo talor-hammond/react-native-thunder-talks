@@ -1,23 +1,74 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React, { Component } from 'react'
 
-export default class App extends React.Component {
+// React-native component imports:
+import {
+  View, // Core layout-component, basic styling, grouping 'elements'; think '<div>'
+  Text, // For displaying text; think '<p>'
+  Button, // Think '<button>'; pass it a 'title' and an onPress
+  TextInput, // Think '<input type="text">'; onChangeText & keyboardType
+  StyleSheet, // Create style-rules that our app will be able to interpret
+  Modal // 'Pops' up on screen, 'animationType', 'visible'
+} from 'react-native'
+
+export default class App extends Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-        <Text>Changes you make will automatically reload.</Text>
-        <Text>Shake your phone to open the developer menu.</Text>
-      </View>
-    );
+      <React.Fragment>
+
+        <View style={styles.container}>
+
+          <View style={styles.header}>
+            <Text style={styles.title}>Mulch</Text>
+            <Text style={styles.subtitle}>The underwhelming calculator app</Text>
+          </View>
+
+          <View style={styles.calculator}>
+
+          </View>
+
+        </View>
+      </React.Fragment>
+    )
   }
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
+
+  container: { // Think of this as a 'class'; className="container"
+    flex: 1, // These are our style properties; all have equivalent values
+    backgroundColor: 'grey',
     alignItems: 'center',
-    justifyContent: 'center',
   },
-});
+  header: {
+    flex: 2,
+    alignItems: 'center',
+    justifyContent: 'center'
+  },
+  title: {
+    fontWeight: 'bold',
+    fontSize: 30
+  },
+  subtitle: {
+    fontSize: 20
+  },
+  calculator: {
+    flex: 3
+  },
+  inputs: {
+    backgroundColor: 'white',
+    marginBottom: 5
+  },
+  results: {
+    fontSize: 25
+  },
+  modal: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center'
+  },
+  modalText: {
+    fontSize: 35,
+    fontWeight: 'bold'
+  }
+
+})
