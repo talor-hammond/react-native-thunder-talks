@@ -44,5 +44,15 @@ React-native app for 15-minute thunder-talk; adds two numbers together and prese
         * Go back and cast the strings one, two as numbers w Number()
 4. Do a ternary w 'submitted' to show results on submitted true we can use what we know from React
 
-
+1. Talk through setup w react-native getting started guide; simulator
+2. App.js looks familiar; except we are pulling in the react-native components we need in order to build a mobile user-interface
+3. Introduce some of the components; View, Text
+4. Render method
+5. StyleSheet component
+6. Add a button, get it to log something
+7. Build constructor; this.state w the stuff we need
+8. TextInput(s) -- talk about differences in interfacing with web vs. mobile; keyboardType
+9. onChangeText setState w refactoring; rewrite addNumbers
+10. Ternary to show results on submitted
+11. Copy paste modal from master branch, talk about its props
 
