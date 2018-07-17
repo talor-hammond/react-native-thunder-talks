@@ -1,12 +1,8 @@
 # react-native-thunder-talks
 React-native app for 15-minute thunder-talk; adds two numbers together and presents the results modally
-# Goal:
-   * Be able to talk through -- in-depth -- the making of a simple react-native app using what we know from react & js
-      * Must be able to do so from start to finish in ~9-10 minutes
-      * Simple, clear, straightfoward
-         * Explain the whys
 
 ## Notes:
+* Getting started: [React Native Guides] <https://facebook.github.io/react-native/docs/getting-started.html>
 * What is react native?
     * *First-slide*
         * Library that builds upon React & JavaScript to create native apps in either Android / iOS or both
@@ -15,7 +11,6 @@ React-native app for 15-minute thunder-talk; adds two numbers together and prese
         * The entire UI is compiled to native-code
             * All the UI elements, the buttons and so on, will be the native equivalents
         * Maybe mention [airBnb] <https://www.youtube.com/watch?v=8qCociUB6aQ>
-            *   
 
     * *Second-slide*
         * Different from something like Cordova / Ionic apps, which are just a mobile-'wrapper' for your web-app; you can even write with Swift / Java
